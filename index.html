@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CROWN FITNESS GYM — Unleash Your Power</title>
+
+<!-- FAVICON -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B0B0B'/%3E%3Cpath d='M14 42V28l8-10 6 7 4-9 4 9 6-7 8 10v14H14z' fill='%23FFD700'/%3E%3Crect x='14' y='42' width='36' height='6' rx='2' fill='%23e6b800'/%3E%3Ccircle cx='22' cy='22' r='2' fill='%230B0B0B'/%3E%3Ccircle cx='32' cy='18' r='2' fill='%230B0B0B'/%3E%3Ccircle cx='42' cy='22' r='2' fill='%230B0B0B'/%3E%3C/svg%3E">
+
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='40' fill='%230B0B0B'/%3E%3Cpath d='M40 120V78l22-28 17 20 11-26 11 26 17-20 22 28v42H40z' fill='%23FFD700'/%3E%3Crect x='40' y='120' width='100' height='16' rx='4' fill='%23e6b800'/%3E%3Ccircle cx='62' cy='58' r='5' fill='%230B0B0B'/%3E%3Ccircle cx='90' cy='46' r='5' fill='%230B0B0B'/%3E%3Ccircle cx='118' cy='58' r='5' fill='%230B0B0B'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOADER -->
+<div class="loader" id="loader">
+  <div class="loader-crown">👑</div>
+  <div class="loader-bar"><div class="loader-bar-inner"></div></div>
+  <div class="loader-text">CROWN FITNESS</div>
+</div>
+
+<!-- SCROLL PROGRESS -->
+<div class="scroll-prog" id="scrollProg"></div>
+
+<!-- BG SHAPES -->
+<div class="bg-shapes"><div class="bg-shape"></div><div class="bg-shape"></div><div class="bg-shape"></div></div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <div class="nav-logo-icon">👑</div>
+      <div class="nav-logo-text"><span class="gold">CROWN</span> FITNESS</div>
+    </a>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#why">Why Us</a>
+      <a href="#services">Services</a>
+      <a href="#trainers">Trainers</a>
+      <a href="#pricing">Plans</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="tel:+919990064307" class="nav-cta-btn">Join Now</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#why">Why Us</a>
+  <a href="#services">Services</a>
+  <a href="#trainers">Trainers</a>
+  <a href="#pricing">Plans</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80" alt="Crown Fitness Gym" loading="eager"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-label"><span class="crown-icon">👑</span> Premium Fitness Experience</div>
+    <h1 class="hero-title">UNLEASH YOUR <span class="gold">POWER</span></h1>
+    <p class="hero-sub">Where champions are built. Crown Fitness Gym delivers world-class training, elite equipment, and an environment designed to push your limits every single day.</p>
+    <div class="hero-btns">
+      <a href="tel:+919990064307" class="btn-gold">👑 Join Now</a>
+      <a href="#contact" class="btn-outline">Contact Us</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><h3><span class="counter" data-target="3000">0</span>+</h3><p>Active Members</p></div>
+      <div class="hero-stat"><h3><span class="counter" data-target="20">0</span>+</h3><p>Expert Trainers</p></div>
+      <div class="hero-stat"><h3><span class="counter" data-target="10">0</span>+</h3><p>Years Experience</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img rv">
+        <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&q=80" alt="Crown Fitness Interior" loading="lazy">
+        <div class="about-img-badge"><h4>10+</h4><p>Years of Excellence</p></div>
+      </div>
+      <div class="about-text">
+        <div class="sec-label rv">About Us</div>
+        <h2 class="rv rv-d1">Where <span class="gold">Greatness</span> Begins</h2>
+        <p class="rv rv-d2">Crown Fitness Gym, located in the heart of Dallupura, Delhi, has been a beacon of fitness excellence for over a decade. We believe that fitness is not just about building bodies — it's about building character, discipline, and a winning mindset.</p>
+        <p class="rv rv-d3">Our state-of-the-art facility is equipped with the latest machines, free weights, and dedicated zones for cardio, strength, and functional training. With certified trainers who are passionate about your success, Crown Fitness is where transformations happen.</p>
+        <div class="about-features rv rv-d4">
+          <div class="about-feat"><span class="feat-icon">🏆</span> Award Winning</div>
+          <div class="about-feat"><span class="feat-icon">💪</span> Premium Equipment</div>
+          <div class="about-feat"><span class="feat-icon">🧘</span> Yoga Zone</div>
+          <div class="about-feat"><span class="feat-icon">🥗</span> Nutrition Plans</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="section section-alt" id="why">
+  <div class="container">
+    <div class="sec-header">
+      <div class="sec-label rv">Why Choose Us</div>
+      <h2 class="sec-title rv rv-d1">THE <span class="gold">CROWN</span> ADVANTAGE</h2>
+      <p class="sec-desc rv rv-d2">What sets us apart from every other gym in the city.</p>
+    </div>
+    <div class="why-grid">
+      <div class="glass why-card rv rv-d1"><div class="why-icon">🏅</div><h3>Certified Trainers</h3><p>Internationally certified fitness professionals with years of real experience.</p></div>
+      <div class="glass why-card rv rv-d2"><div class="why-icon">⚙️</div><h3>Latest Equipment</h3><p>Premium machines from top global brands, maintained to the highest standards.</p></div>
+      <div class="glass why-card rv rv-d3"><div class="why-icon">🎯</div><h3>Personal Training</h3><p>Customized 1-on-1 programs designed specifically for your body and goals.</p></div>
+      <div class="glass why-card rv rv-d4"><div class="why-icon">💰</div><h3>Affordable Membership</h3><p>Premium experience at prices that won't break the bank. Value for every rupee.</p></div>
+      <div class="glass why-card rv rv-d5"><div class="why-icon">✨</div><h3>Clean Environment</h3><p>Hygienic, well-ventilated space cleaned multiple times daily for your comfort.</p></div>
+      <div class="glass why-card rv rv-d6"><div class="why-icon">🥗</div><h3>Nutrition Guidance</h3><p>Expert diet plans and nutritional advice to complement your training regimen.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="sec-header">
+      <div class="sec-label rv">Our Services</div>
+      <h2 class="sec-title rv rv-d1">WHAT WE <span class="gold">OFFER</span></h2>
+      <p class="sec-desc rv rv-d2">Comprehensive fitness solutions for every level and every goal.</p>
+    </div>
+    <div class="srv-grid">
+      <div class="glass srv-card rv rv-d1"><div class="srv-num">01</div><h3>Strength Training</h3><p>Build raw power and muscle mass with progressive overload programs using free weights and machines.</p><div class="srv-arrow">→</div></div>
+      <div class="glass srv-card rv rv-d2"><div class="srv-num">02</div><h3>Cardio</h3><p>Elevate your heart health with treadmills, cycles, ellipticals, and HIIT sessions for maximum calorie burn.</p><div class="srv-arrow">→</div></div>
+      <div class="glass srv-card rv rv-d3"><div class="srv-num">03</div><h3>Weight Loss</h3><p>Targeted fat-loss programs combining cardio, strength, and nutrition for sustainable results.</p><div class="srv-arrow">→</div></div>
+      <div class="glass srv-card rv rv-d4"><div class="srv-num">04</div><h3>Muscle Building</h3><p>Scientifically structured hypertrophy training to pack on lean muscle with proper periodization.</p><div class="srv-arrow">→</div></div>
+      <div class="glass srv-card rv rv-d5"><div class="srv-num">05</div><h3>Personal Training</h3><p>Dedicated trainer focusing solely on your form, progress, and motivation throughout every session.</p><div class="srv-arrow">→</div></div>
+      <div class="glass srv-card rv rv-d6"><div class="srv-num">06</div><h3>Functional Training</h3><p>Real-world movement patterns that improve agility, balance, and overall athletic performance.</p><div class="srv-arrow">→</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRAINERS -->
+<section class="section section-alt" id="trainers">
+  <div class="container">
+    <div class="sec-header">
+      <div class="sec-label rv">Our Trainers</div>
+      <h2 class="sec-title rv rv-d1">MEET YOUR <span class="gold">COACHES</span></h2>
+      <p class="sec-desc rv rv-d2">Elite professionals dedicated to transforming your body and mindset.</p>
+    </div>
+    <div class="trn-grid">
+      <div class="trn-card rv rv-d1"><img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=500&q=80" alt="Trainer" loading="lazy"><div class="trn-overlay"><h3>Rahul Sharma</h3><p class="trn-spec">Strength & Powerlifting</p><div class="trn-socials"><a href="#" aria-label="Instagram">📷</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="YouTube">▶</a></div></div></div>
+      <div class="trn-card rv rv-d2"><img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&q=80" alt="Trainer" loading="lazy"><div class="trn-overlay"><h3>Neha Gupta</h3><p class="trn-spec">Yoga & Flexibility</p><div class="trn-socials"><a href="#" aria-label="Instagram">📷</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="YouTube">▶</a></div></div></div>
+      <div class="trn-card rv rv-d3"><img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=500&q=80" alt="Trainer" loading="lazy"><div class="trn-overlay"><h3>Arjun Singh</h3><p class="trn-spec">Personal Training</p><div class="trn-socials"><a href="#" aria-label="Instagram">📷</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="YouTube">▶</a></div></div></div>
+      <div class="trn-card rv rv-d4"><img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?w=500&q=80" alt="Trainer" loading="lazy"><div class="trn-overlay"><h3>Priya Verma</h3><p class="trn-spec">Weight Loss & Nutrition</p><div class="trn-socials"><a href="#" aria-label="Instagram">📷</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="YouTube">▶</a></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section" id="pricing">
+  <div class="container">
+    <div class="sec-header">
+      <div class="sec-label rv">Membership Plans</div>
+      <h2 class="sec-title rv rv-d1">CHOOSE YOUR <span class="gold">CROWN</span></h2>
+      <p class="sec-desc rv rv-d2">Flexible plans that deliver unmatched value at every level.</p>
+    </div>
+    <div class="prc-grid">
+      <div class="glass prc-card rv rv-d1" id="prc1">
+        <h3>BASIC</h3>
+        <div class="price">₹1,299<span>/month</span></div>
+        <p class="price-sub">Get started on your fitness journey</p>
+        <ul class="prc-feats">
+          <li><span class="chk">✓</span> Gym Floor Access</li>
+          <li><span class="chk">✓</span> Basic Cardio Machines</li>
+          <li><span class="chk">✓</span> Locker Room Access</li>
+          <li><span class="chk">✓</span> General Workout Plan</li>
+          <li><span class="chk off">✓</span><span class="off-text">Personal Trainer</span></li>
+          <li><span class="chk off">✓</span><span class="off-text">Diet Consultation</span></li>
+          <li><span class="chk off">✓</span><span class="off-text">Yoga Classes</span></li>
+        </ul>
+        <a href="tel:+919990064307" class="btn-gold">Get Started</a>
+      </div>
+      <div class="glass prc-card pop rv rv-d2" id="prc2">
+        <div class="prc-badge">👑 Most Popular</div>
+        <h3>STANDARD</h3>
+        <div class="price">₹2,499<span>/month</span></div>
+        <p class="price-sub">Best value for serious fitness lovers</p>
+        <ul class="prc-feats">
+          <li><span class="chk">✓</span> Full Gym Access</li>
+          <li><span class="chk">✓</span> All Cardio & Weights</li>
+          <li><span class="chk">✓</span> Locker + Shower Access</li>
+          <li><span class="chk">✓</span> Custom Workout Plan</li>
+          <li><span class="chk">✓</span> Personal Trainer (3x/week)</li>
+          <li><span class="chk">✓</span> Group Yoga Sessions</li>
+          <li><span class="chk off">✓</span><span class="off-text">Diet Consultation</span></li>
+        </ul>
+        <a href="tel:+919990064307" class="btn-gold">Get Started</a>
+      </div>
+      <div class="glass prc-card rv rv-d3" id="prc3">
+        <h3>PREMIUM</h3>
+        <div class="price">₹3,999<span>/month</span></div>
+        <p class="price-sub">Complete transformation package</p>
+        <ul class="prc-feats">
+          <li><span class="chk">✓</span> Unlimited Full Access</li>
+          <li><span class="chk">✓</span> All Equipment & Zones</li>
+          <li><span class="chk">✓</span> Premium Locker Room</li>
+          <li><span class="chk">✓</span> Fully Personalized Program</li>
+          <li><span class="chk">✓</span> Daily Personal Trainer</li>
+          <li><span class="chk">✓</span> Unlimited Yoga Classes</li>
+          <li><span class="chk">✓</span> Full Diet Consultation</li>
+        </ul>
+        <a href="tel:+919990064307" class="btn-gold">Get Started</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section section-alt" id="gallery">
+  <div class="container">
+    <div class="sec-header">
+      <div class="sec-label rv">Gallery</div>
+      <h2 class="sec-title rv rv-d1">FEEL THE <span class="gold">ENERGY</span></h2>
+      <p class="sec-desc rv rv-d2">A glimpse inside Crown Fitness — where dedication meets determination.</p>
+    </div>
+    <div class="gal-grid">
+      <div class="gal-item rv" data-src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&q=80"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=900&q=80" alt="Gallery" loading="lazy"><div class="gal-ov"><div class="gal-zoom">+</div></div></div>
+      <div class="gal-item rv rv-d1" data-src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=1200&q=80"><img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=500&q=80" alt="Gallery" loading="lazy"><div class="gal-ov"><div class="gal-zoom">+</div></div></div>
+      <div class="gal-item rv rv-d2" data-src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?w=1200&q=80"><img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?w=500&q=80" alt="Gallery" loading="lazy"><div class="gal-ov"><div class="gal-zoom">+</div></div></div>
+      <div class="gal-item rv rv-d3" data-src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=1200&q=80"><img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=500&q=80" alt="Gallery" loading="lazy"><div class="gal-ov"><div class="gal-zoom">+</div></div></div>
+      <div class="gal-item rv rv-d1" data-src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=1200&q=80"><img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&q=80" alt="Gallery" loading="lazy"><div class="gal-ov"><div class="gal-zoom">+</div></div></div>
+      <div class="gal-item rv rv-d2" data-src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=1200&q=80"><img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&q=80" alt="Gallery" loading="lazy"><div class="gal-ov"><div class="gal-zoom">+</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox"><button class="lightbox-close" aria-label="Close">✕</button><img src="" alt="Gallery full view" id="lightboxImg"></div>
+
+<!-- TESTIMONIALS -->
+<section class="section" id="testimonials">
+  <div class="container">
+    <div class="sec-header">
+      <div class="sec-label rv">Testimonials</div>
+      <h2 class="sec-title rv rv-d1">MEMBER <span class="gold">STORIES</span></h2>
+      <p class="sec-desc rv rv-d2">Real transformations from real members of Crown Fitness.</p>
+    </div>
+    <div class="tst-wrapper rv">
+      <div class="tst-track" id="tstTrack">
+        <div class="tst-slide"><div class="tst-inner"><div class="tst-stars">★★★★★</div><p class="tst-text">Crown Fitness completely transformed my body. I lost 18 kgs in 5 months with their personal training program. The trainers here don't just train you — they motivate you to become the best version of yourself.</p><div class="tst-author"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Member" class="tst-avatar" loading="lazy"><div class="tst-author-info"><h4>Vikas Rawat</h4><p>Member since 2021</p></div></div></div></div>
+        <div class="tst-slide"><div class="tst-inner"><div class="tst-stars">★★★★★</div><p class="tst-text">Best gym in Dallupura, no competition. The equipment is always well-maintained, the environment is electric, and the trainers actually know what they're doing. Worth every single rupee.</p><div class="tst-author"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Member" class="tst-avatar" loading="lazy"><div class="tst-author-info"><h4>Anjali Tyagi</h4><p>Member since 2022</p></div></div></div></div>
+        <div class="tst-slide"><div class="tst-inner"><div class="tst-stars">★★★★★</div><p class="tst-text">I've been to 5 different gyms in East Delhi. Crown Fitness is on another level. The early morning crowd is super motivated, the timings are perfect for working professionals, and the results speak for themselves.</p><div class="tst-author"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80" alt="Member" class="tst-avatar" loading="lazy"><div class="tst-author-info"><h4>Deepak Kumar</h4><p>Member since 2023</p></div></div></div></div>
+        <div class="tst-slide"><div class="tst-inner"><div class="tst-stars">★★★★★</div><p class="tst-text">The yoga classes here are a hidden gem. Combined with the weight training program, I've never felt stronger or more flexible. The nutrition guidance from the trainers helped me completely change my eating habits.</p><div class="tst-author"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Member" class="tst-avatar" loading="lazy"><div class="tst-author-info"><h4>Meera Sharma</h4><p>Member since 2023</p></div></div></div></div>
+      </div>
+      <div class="tst-nav">
+        <button class="tst-arrow" id="tstPrev" aria-label="Previous">←</button>
+        <div style="display:flex;gap:8px" id="tstDots"></div>
+        <button class="tst-arrow" id="tstNext" aria-label="Next">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section section-alt" id="contact">
+  <div class="container">
+    <div class="sec-header">
+      <div class="sec-label rv">Get in Touch</div>
+      <h2 class="sec-title rv rv-d1">READY TO <span class="gold">START?</span></h2>
+      <p class="sec-desc rv rv-d2">Walk in, call us, or drop a message — we're ready to help you begin.</p>
+    </div>
+    <div class="ctc-grid">
+      <div>
+        <div class="ctc-info">
+          <div class="ctc-detail rv rv-d1"><div class="ctc-icon">📍</div><div><h4>Our Address</h4><p>96, Badana Moholla, Dallupura, Delhi - 110096</p></div></div>
+          <div class="ctc-detail rv rv-d2"><div class="ctc-icon">📞</div><div><h4>Phone</h4><p><a href="tel:+919990064307">+91 99900 64307</a></p></div></div>
+          <div class="ctc-detail rv rv-d3"><div class="ctc-icon">🕐</div><div><h4>Working Hours</h4><p>Monday – Saturday<br>05:00 AM – 05:00 PM</p></div></div>
+        </div>
+        <form class="ctc-form rv rv-d4" id="contactForm" novalidate>
+          <div class="form-row">
+            <div><input type="text" name="name" placeholder="Your Name *" required><div class="form-error">Please enter your name</div></div>
+            <div><input type="tel" name="phone" placeholder="Phone Number *" required><div class="form-error">Please enter a valid phone number</div></div>
+          </div>
+          <div style="margin-top:14px">
+            <select name="interest" required>
+              <option value="" disabled selected>I'm Interested In *</option>
+              <option>Basic Membership</option>
+              <option>Standard Membership</option>
+              <option>Premium Membership</option>
+              <option>Personal Training</option>
+              <option>Weight Loss Program</option>
+              <option>General Inquiry</option>
+            </select>
+            <div class="form-error">Please select an option</div>
+          </div>
+          <div style="margin-top:14px"><textarea name="message" placeholder="Your Message (Optional)" rows="4"></textarea></div>
+          <button type="submit" class="btn-gold" style="margin-top:18px;width:100%;justify-content:center">Send Message 👑</button>
+        </form>
+      </div>
+      <div class="ctc-map rv rv-d2">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.5!2d77.3!3d28.63!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sDallupura%2C%20Delhi%20110096!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Crown Fitness Gym Location"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo" style="margin-bottom:4px"><div class="nav-logo-icon">👑</div><div class="nav-logo-text"><span class="gold">CROWN</span> FITNESS</div></a>
+        <p>Where champions are built. Premium fitness experience in the heart of Dallupura, Delhi.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="YouTube">▶</a>
+          <a href="#" aria-label="Twitter">𝕏</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Membership</a>
+        <a href="#gallery">Gallery</a>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#services">Strength Training</a>
+        <a href="#services">Weight Loss</a>
+        <a href="#services">Cardio</a>
+        <a href="#services">Personal Training</a>
+        <a href="#services">Yoga</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+919990064307">+91 99900 64307</a>
+        <a href="https://maps.google.com/?q=96+Badana+Moholla+Dallupura+Delhi+110096" target="_blank" rel="noopener noreferrer">Get Directions</a>
+        <p style="font-size:12px;color:#333;margin-top:12px;line-height:1.6">Mon – Sat<br>05:00 AM – 05:00 PM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Crown Fitness Gym. All rights reserved.</p>
+      <p>Designed with 👑 for champions</p>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS — STATIC, NO BOUNCE -->
+<div class="float-btns">
+  <a href="https://wa.me/919990064307?text=Hi%20Crown%20Fitness!%20I'm%20interested%20in%20joining." target="_blank" rel="noopener noreferrer" class="float-btn float-whatsapp" aria-label="WhatsApp">
+    <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004c0 3.5 1.132 6.744 3.054 9.378L1.056 31.2l6.074-1.95a15.9 15.9 0 008.874 2.678C24.826 31.928 32 24.752 32 16.004S24.826 0 16.004 0zm9.302 22.614c-.39 1.1-1.932 2.014-3.168 2.28-.846.18-1.95.324-5.668-1.218-4.76-1.972-7.822-6.8-8.062-7.122-.23-.322-1.928-2.568-1.928-4.896s1.22-3.474 1.654-3.95c.434-.476.948-.596 1.264-.596.316 0 .632.002.908.016.29.016.682-.11 1.066.814.39.948 1.326 3.234 1.442 3.468.116.234.194.508.04.818-.156.312-.234.508-.468.782-.234.274-.492.614-.702.824-.234.234-.478.488-.204.956.272.468 1.214 2.002 2.606 3.244 1.79 1.598 3.3 2.09 3.768 2.324.468.234.742.196 1.014-.118.274-.314 1.178-1.374 1.492-1.842.314-.468.632-.39 1.064-.234.434.156 2.742 1.292 3.21 1.528.468.234.782.352.898.548.116.194.116 1.138-.274 2.24z"/></svg>
+  </a>
+  <a href="tel:+919990064307" class="float-btn float-call" aria-label="Call Now">📞</a>
+</div>
+
+<!-- BACK TO TOP -->
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
